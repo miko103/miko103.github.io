@@ -1,0 +1,10 @@
+p.widegap{
+    line-height: 1.8
+}
+p.tiny{
+    font-size: 30%;
+}
+p.title{
+    font-size:300%;
+    color: rgb(66, 66, 66);
+}
