@@ -14,3 +14,6 @@ p.hugegap{
     padding: 30px;
     margin: 50px;
 }
+strong.red{
+    color: rgb(255, 0, 0);
+}
