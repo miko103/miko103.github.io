@@ -14,13 +14,13 @@ h1.title{
     font-size: 200%;
 }
 
-p.sidelist{
+p.leftlist{
     text-align:left;
     color: rgb(156, 156, 156);
     font-size: 150%;
 }
 
-ul.sidelist{
+ul.leftlist{
     color: rgb(156, 156, 156);
     font-size: 150%;
 }
