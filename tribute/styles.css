@@ -41,3 +41,14 @@ li.navbar{
     padding: 5px;
     width: 20%;
 }
+.center{
+    display: flex;
+    height: 300%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px
+}
+.imgstandard{
+    width: 300;
+    height: auto;
+}
