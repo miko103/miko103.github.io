@@ -24,3 +24,10 @@ ul.leftlist{
     color: rgb(156, 156, 156);
     font-size: 150%;
 }
+li.navbar{
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: #000000;
+
+}

@@ -1,4 +1,12 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(https://fonts.googleapis.com/css?family=Ubuntu);
+}
 
+body.body1{
+    background-color:rgb(90, 183, 226);
+    font-family:Ubuntu;
+}
 
 p.widegap{
     line-height: 1.8
@@ -16,4 +24,11 @@ p.hugegap{
 }
 strong.red{
     color: rgb(255, 0, 0);
+}
+li.navbar{
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: rgb(90, 183, 226);
+
 }
