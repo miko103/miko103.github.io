@@ -30,6 +30,7 @@ li.navbar{
     display: block;
     padding: 8px;
     background-color: rgb(90, 183, 226);
+    font-size: 110%;
 }
 
 .row{
@@ -51,4 +52,5 @@ li.navbar{
 .imgstandard{
     width: 300;
     height: auto;
+    padding: 5%;
 }

@@ -12,16 +12,13 @@ const rock = [
 const button = document.getElementById("button");  
 var image = document.getElementById("imageinator");
 
-  var count = 0;
-
-
+let count = 0;
   
-
-  
-button.addEventListener("click", function(rock) {
-    image.scr = rock[count];
-    count++;
-        if (count == 9) {
-        count = 0;
-      });
+button.addEventListener("click"), function(rock) {
+  var image = document.getElementById("imageinator");
+  image.scr = rock[count];
+  count++;
+    if (count == 9) {
+      count = 0;
+        };
     };
