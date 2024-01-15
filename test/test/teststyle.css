@@ -2,3 +2,7 @@
     font-family: Ubuntu;
     src: url(https://fonts.googleapis.com/css?family=Ubuntu);
 }
+
+body{
+    background-color: aquamarine;
+}
