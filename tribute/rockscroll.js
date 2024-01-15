@@ -16,7 +16,7 @@ let count = 0;
 button.addEventListener("click",changeSrc)
 
 function changeSrc(){
-  var image = document.getElementById("imageinator");
+  const image = document.getElementById("imageinator");
   image.src = rock[count]
   count++
 };
