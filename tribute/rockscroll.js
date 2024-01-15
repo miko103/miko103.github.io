@@ -5,18 +5,22 @@ const rock = [
     "./rock/rockSerious2.jpg",
     "./rock/rockTHEFACE1.jpg",
     "./rock/rockWWE1.png",
-    "./rock/shockedrock.jpg",  
+    "./rock/shockedrock.jpg",
+    "./rock/youngrock.png",  
     "./rock/youngrockTHEFACE.png",
 ];
 
 const button = document.getElementById("button");  
 
-let count = 0;
-  
-button.addEventListener("click",changeSrc)
+count=0;
+
+button.addEventListener("click",changeSrc);
 
 function changeSrc(){
   const image = document.getElementById("imageinator");
   image.src = rock[count]
   count++
+  if (count > 8){
+    count = 0;
+  }
 };

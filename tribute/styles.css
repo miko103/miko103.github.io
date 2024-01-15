@@ -49,8 +49,14 @@ li.navbar{
     justify-content: center;
     padding: 5px
 }
-.imgstandard{
-    width: 300;
-    height: auto;
+img.imgstandard{
+    width: 200px;
+    height: 200px;
     padding: 5%;
+    object-fit: contain;
+}
+
+button{
+    float: left;
+    vertical-align: top;    
 }
