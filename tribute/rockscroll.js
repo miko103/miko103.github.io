@@ -10,15 +10,13 @@ const rock = [
 ];
 
 const button = document.getElementById("button");  
-var image = document.getElementById("imageinator");
 
 let count = 0;
   
-button.addEventListener("click"), function(rock) {
+button.addEventListener("click",changeSrc)
+
+function changeSrc(){
   var image = document.getElementById("imageinator");
-  image.scr = rock[count];
-  count++;
-    if (count == 9) {
-      count = 0;
-        };
-    };
+  image.src = rock[count]
+  count++
+};
