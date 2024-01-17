@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(https://fonts.googleapis.com/css?family=Ubuntu);
+}
+
+
+li.navbar{
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: rgb(204, 119, 34);
+}
+
+body.body1{
+    background-color:rgb(204, 119, 34);
+    font-family:Ubuntu;
+}
