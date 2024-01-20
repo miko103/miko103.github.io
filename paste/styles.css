@@ -1,0 +1,14 @@
+li.navbar{
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: #000000;
+    text-emphasis-color: white;
+}
+
+.mainwriting{
+    color: rgba(255, 0, 0, 0.788);
+    margin-right: 10px;
+    padding: 20px;
+    width: 700px;
+}
