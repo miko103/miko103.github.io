@@ -1,5 +1,5 @@
 
-const url = new URL("https://miko1034.github.com/paste?data=1");
+const url = new URL("https://miko1034.github.io/paste/paste.html");
 const params1 = new URLSearchParams(url.search);
 
 
