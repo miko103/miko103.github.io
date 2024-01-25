@@ -1,4 +1,3 @@
-const button = document.getElementById('btn');
 const inputBox = document.getElementById("inputBox")
 const text = document.getElementById("text")
 
