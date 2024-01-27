@@ -1,17 +1,19 @@
 const inputBox = document.getElementById("textBox")
+const text = document.getElementById("text")
 
 function updateText(textToWrite){
-    inputBox.setAttribute('value',textToWrite);
+    text.innerHTML = textToWrite;
 }
 
 function load(){
     const queryString = window.location.search;
     console.log(queryString);
     const urlParams = new URLSearchParams(queryString);
-    var dataToWrite = hextostring(urlParams.get("data"))
-    console.log(dataToWrite);
+    var dataToWrite = urlParams.get("data");
+    console.log("hexed: " + dataToWrite);
+    dataToWrite = hextostring(dataToWrite)
+    console.log("unhexed: " + dataToWrite)
     updateText(dataToWrite)
-    dataToWrite = stringtohex(dataToWrite)
 }//  ^from the internet 
 
 function stringtohex(str){
@@ -22,7 +24,7 @@ function stringtohex(str){
         hex += hexValue.padStart(2,"0")
     }
 return hex
-} //////////////  THIS WHOLE CODE DONT EVEN WORK >:(
+}
 
 function hextostring(hex){
     let str = "";
@@ -39,7 +41,7 @@ load()
 
 inputBox.onkeyup = function() {
     const url = './paste.html';
-    const data = inputBox.value;
+    const data = stringtohex(inputBox.value);
     history.pushState({}, null, `${url}?data=${data}`);
     load()
   }
