@@ -5,18 +5,28 @@
     </head>
     <body class="body1">
         <div>
-            <ul>
-                <li class="navbar"><a href="../index.html">Home</a></li>
-                <li class="navbar"><a href="../tribute/tribute.html">Tribute</a></li>
-                <li class="navbar"><a href="../blog/homepage.html">Blog</a></li>
-            </ul>
-            <br><br><br>
-        </div>
-        <div><!--Main Div-->
-            <form>
-                <textarea id="textBox">Write here...</textarea>
-            </form>
-            <script src="paste.js" defer></script>
+            <div>
+                <ul>
+                    <li class="navbar"><a href="../home/index.html">Home</a></li>
+                    <li class="navbar"><a href="../tribute/tribute.html">Tribute</a></li>
+                    <li class="navbar"><a href="../blog/homepage.html">Blog</a></li>
+                    <li class="navbar"><a href="./paste.html?data=">Paste</a></li>
+                </ul>
+                <br><br><br>
+            </div>
+            <div><!--Main Div-->
+                <input class="textbox" type="text" id="textBox" >
+                <h2 id="text"></h2>
+                <script src="paste.js" defer></script>
+            </div>
         </div>
     </body>
 </html>
+<!--
+    To Do list:
+     + Make look nicer
+     + Explain how it works
+       - Make a README????????????? or a popup when a button or icon on page clicked??
+     + Figure out how to resize the text box / update it when reading from url param :/
+
+-->

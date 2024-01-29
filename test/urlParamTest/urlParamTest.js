@@ -1,3 +1,4 @@
+const button = document.getElementById('btn');
 const inputBox = document.getElementById("inputBox")
 const text = document.getElementById("text")
 
@@ -23,18 +24,13 @@ return str;
 }
 //end
 
-function updateText(textToWrite){
-  const text = document.getElementById("toUpdate").innerHTML = textToWrite
-}
-
 function load(){
   const queryString = window.location.search;
   console.log(queryString);
   const urlParams = new URLSearchParams(queryString);
   const dataToWrite = urlParams.get("data")
   console.log(dataToWrite);
-  dataToWrite = hextostring(dataToWrite)
-  updateText(dataToWrite)
+  const text = document.getElementById("toUpdate").innerHTML = dataToWrite
 }//  ^from the internet 
 
 // CODE STARTS HERE
@@ -42,10 +38,9 @@ function load(){
 //initial reading from the parameter and updating text accordingly
 load()
 
-//main loop
 inputBox.onkeyup = function() {
-  const url = './urlParamTest.html';
-  const data = stringtohex(inputBox.value)
-  updateText()
+  const url = './paste.html';
+  const data = inputBox.value;
+  history.pushState({}, null, `${url}?data=${data}`);
   load()
-};
+}
