@@ -33,6 +33,7 @@ function load(){
   const urlParams = new URLSearchParams(queryString);
   const dataToWrite = urlParams.get("data")
   console.log(dataToWrite);
+  dataToWrite = hextostring(dataToWrite)
   updateText(dataToWrite)
 }//  ^from the internet 
 
@@ -44,6 +45,7 @@ load()
 //main loop
 inputBox.onkeyup = function() {
   const url = './urlParamTest.html';
-  const data = inputBox.value
-  window.location.href = `${url}?data=${data}`;
+  const data = stringtohex(inputBox.value)
+  updateText()
+  load()
 };
