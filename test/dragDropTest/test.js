@@ -1,31 +1,22 @@
-let delement = document.getElementById("draggable").addEventListener("click", clicked);
+let delement = document.getElementById("draggable")
 
 var mouseDown = 0;
-document.body.onmousedown = function(){
+delement.onmousedown = function(e){
     ++mouseDown;
+    delement.offset = [
+        delement.offsetLeft -e.clientX,
+        delement.offsetTop - e.clientY
+    ];
 }
-document.body.onmouseup = function(){
+delement.onmouseup = function(){
     --mouseDown;
+}
+delement.onmousemove = function(){
+    if (mouseDown == )
 }
 
  // everything dont work. it works by detecting when click fully finished (mouseup), 
  //when it should be mouse down
-function clicked(e){
-    let pos1 = e.clientX;
-    let pos2 = e.clientY;
-    console.log(pos1)
-    console.log(pos2)
-    moveDiv(pos1,pos2)
-}
-function moveDiv(p1,p2){
-    while (mouseDown == 1){
-        p1 = pos3 - e.clientX;
-        p2 = pos4 - e.clientY;
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-    }
-
-}
 
 // calculate the new cursor position:
 //  pos1 = pos3 - e.clientX;
