@@ -11,15 +11,15 @@ delement.onmousedown = function(e){
 delement.onmouseup = function(){
     --mouseDown;
 }
-delement.onmousemove = function(){
-    if (mouseDown == )
+delement.onmousemove = function(event){
+    if (mouseDown == 1){
+        mousePos = {
+            x:event.clientX,
+            y:event.clientY
+        };
+        delement.style.left = (mousePos.x + delement.offset[0]) + "px";
+        delement.style.top = (mousePos.y + delement.offset[1]) + "px"
+    }
 }
 
- // everything dont work. it works by detecting when click fully finished (mouseup), 
- //when it should be mouse down
-
-// calculate the new cursor position:
-//  pos1 = pos3 - e.clientX;
-//  pos2 = pos4 - e.clientY;
-//  pos3 = e.clientX;
-//  pos4 = e.clientY;
+//works but only when mouse is on the box. if not, the box wont move even when being "dragged"
