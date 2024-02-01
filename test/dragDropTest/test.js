@@ -1,17 +1,23 @@
-let delement = document.getElementById("draggable")
+let delement = document.getElementById("draggable"),
+div1 = document.getElementById("div1")
+//more code from internet\/ 
+function moveAt(pageX,pageY){  
+    delement.style.top
+}
 
 var mouseDown = 0;
-delement.onmousedown = function(e){
+div1.onmousedown = function(e){ 
     ++mouseDown;
     delement.offset = [
-        delement.offsetLeft -e.clientX,
+        delement.offsetLeft - e.clientX,
         delement.offsetTop - e.clientY
     ];
 }
-delement.onmouseup = function(){
+
+div1.onmouseup = function(){
     --mouseDown;
 }
-delement.onmousemove = function(event){
+div1.onmousemove = function(event){
     if (mouseDown == 1){
         mousePos = {
             x:event.clientX,
