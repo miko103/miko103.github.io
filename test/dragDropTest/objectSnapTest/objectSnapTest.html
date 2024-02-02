@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body id="body">
+        <h1>Test of Snapping Into Place</h1>
+        <div class="parent">
+            <div id="draggable" draggable="true" ondragstart="ondragstart(evenet);">
+                <p>Drag Me!!</p>
+                <script src="test.js" defer></script>
+            </div>
+            <div class="column" id="column1" ondragover="ondragover(event);" ondrop="ondrop(event);"><p>Dropzone 1</p></div>
+            <div class="column" id="column2"><p>Dropzone 2</p></div>
+            <div class="column" id="column3"><p>Dropzone 3</p></div>
+            <div class="column" id="column4"><p>Dropzone 4</p></div>
+            
+        </div>
+    </body> 
+</html>
