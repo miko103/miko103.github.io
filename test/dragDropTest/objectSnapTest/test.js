@@ -8,9 +8,9 @@ function onDragOver(event){
     event.preventDefault();
 }
 function onDrop(event){
-    const id=event.dataTransfer.getData("text");
+    const id=event.id
     const draggableElement = document.getElementById(id)
-    const dropzone = event.target;
+    const dropzone = event.target; // no work
     dropzone.appendChild(draggableElement)
     event.dataTransfer.clearData();
 
