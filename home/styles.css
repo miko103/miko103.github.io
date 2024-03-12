@@ -6,24 +6,22 @@
 body.body1{
     background-color:rgb(0, 0, 0);
     font-family: Ubuntu;
+    text-align:center;
 }
 
 h1.title{
-    text-align:center;
     color: rgb(255, 255, 255);
-    font-size: 200%;
+    font-size: 250%;
 }
 
-p.leftlist{
-    text-align:left;
-    color: rgb(156, 156, 156);
-    font-size: 150%;
+.main{
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    word-wrap: normal;
 }
 
-ul.leftlist{
-    color: rgb(156, 156, 156);
-    font-size: 150%;
-}
 li.navbar{
     float: left;
     display: block;
