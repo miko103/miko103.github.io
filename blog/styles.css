@@ -10,7 +10,9 @@ li.navbar{
     padding: 8px;
     background-color: rgb(204, 119, 34);
 }
-
+navbar:visited{
+    color:rgb(0, 0, 0);
+}
 body.body1{
     background-color:rgb(204, 119, 34);
     font-family:Ubuntu;
