@@ -3,7 +3,7 @@
 let input = document.getElementById("searchBox");
 
 
-console.log(text);
+console.log("1");
 
 input.onkeyup = function() {
 
