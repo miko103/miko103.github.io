@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(https://fonts.googleapis.com/css?family=Ubuntu);
+}
+li.navbar{
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: #ffffff;
+}
+.centered{
+    text-align: center;
+}
