@@ -26,5 +26,8 @@ li.navbar{
     float: left;
     display: block;
     padding: 8px;
-    background-color: #000000;
+    background-color: #000000; 
+}
+navbar:visited{
+    color:white;
 }

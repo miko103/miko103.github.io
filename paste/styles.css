@@ -19,6 +19,9 @@ li.navbar{
     border-block-style: solid;
     border-block-color: black;
 }
+navbar:visited{
+    color:rgb(0, 0, 0);
+}
 
 .textbox{
     width: 100%;
